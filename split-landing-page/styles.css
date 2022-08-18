@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;  
+    position: relative;
+}
+
+.ps {
+    background: linear-gradient(0deg, rgba(87, 84, 236, 0.7), rgba(87, 84, 236, 0.7)),url("ps.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.xbox {
+    background: linear-gradient(0deg, rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)),url("xbox.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.ps:hover {
+    flex: 3;
+}
+
+.xbox:hover {
+    flex: 3;
+}
+
+.ps,
+.xbox,
+.ps:hover,
+.xbox:hover {   
+    white-space: nowrap;
+    transition: all 1.3s ease-in-out;
+}
+
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: white;
+}
+
+.btn {
+    background: none;
+    color: white;
+    border: #fff solid 0.2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 15rem;
+    padding: 1.5rem;
+}
+
+.ps-btn:hover {
+    background-color: rgba(87, 84, 236, 1);
+    border-color: rgba(87, 84, 236, 1);;
+}
+
+.xbox-btn:hover {
+    background-color: rgba(28, 122, 28, 1);
+    border-color: rgba(28, 122, 28, 1);
+}
